@@ -1,6 +1,6 @@
 ## Divers ##
 *.sav
-bin/*
+bin/main
 doc/html/*
 todo.txt
 
