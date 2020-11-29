@@ -1,3 +1,8 @@
+/**
+ * @file prep.c
+ * @brief Gestion de l'affichage de la phase préparation
+ */
+
 #include <stdio.h>
 #include "../metier/joueur.h"
 #include "../metier/ia.h"

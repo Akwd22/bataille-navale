@@ -1,3 +1,8 @@
+/**
+ * @file divers.c
+ * @brief Quelques fonctions utilitaires de gestion de l'affichage
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "../metier/options.h"

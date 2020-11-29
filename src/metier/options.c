@@ -1,3 +1,8 @@
+/**
+ * @file options.c
+ * @brief Toutes les fonctions relatives aux options
+ */
+
 #include "options.h"
 
 ////////////////////////

@@ -1,3 +1,8 @@
+/**
+ * @file joueur.c
+ * @brief Toutes les fonctions relatives aux joueurs
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "options.h"

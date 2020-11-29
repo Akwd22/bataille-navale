@@ -1,3 +1,8 @@
+/**
+ * @file ia.c
+ * @brief Toutes les fonctions relatives à la gestion de l'IA
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include "joueur.h"

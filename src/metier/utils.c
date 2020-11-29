@@ -1,3 +1,8 @@
+/**
+ * @file utils.c
+ * @brief Toutes les fonctions utilitaires
+ */
+
 #include <stdio.h>
 #include <stdio_ext.h>
 #include <string.h>

@@ -7,13 +7,27 @@
 // Types //
 ///////////
 
-// Structure d'un bateau
+/**
+ * @brief Structure d'un bateau
+ */
 typedef struct Bateau
 {
-    UBYTE h;             // Hauteur du bateau
-    UBYTE l;             // Largeur du bateau
-    bool estPose;        // Indique si le bateau est posé
-    struct Case **cases; // Tableau de pointeurs vers les cases occupées (+ protection) par le bateau, fin du tableau marquée par NULL
+    /**
+     * @brief Hauteur du bateau
+     */
+    UBYTE h;
+    /**
+     * @brief Largeur du bateau
+     */
+    UBYTE l;
+    /**
+     * @brief Indique si le bateau est posé
+     */
+    bool estPose;
+    /**
+     * @brief Tableau de pointeurs vers les cases occupées (+ protection) par le bateau, fin du tableau marquée par NULL
+     */
+    struct Case **cases;
 } Bateau;
 
 ///////////////

@@ -1,3 +1,8 @@
+/**
+ * @file plateau.c
+ * @brief Toutes les fonctions relatives aux plateaux
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

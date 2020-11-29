@@ -8,28 +8,61 @@
 // Types //
 ///////////
 
-// État d'une case
+/**
+ * @brief État d'une case
+ */
 typedef enum EtatCase
 {
-    LIBRE = 'O',   // Case qui ne contient rien
-    INCONNU = '?', // Case qui n'a pas été touché (usage pour l'IHM uniquement)
-    PROTECT = '#', // Case de protection autour d'un bateau
-    DETRUIT = 'X', // Case dont le morceau d'un bateau est détruit
-    OCCUPE = 'B'   // Case occupée par le morceau d'un bateau
+    /**
+     * @brief Case vide
+     */
+    LIBRE = 'O',
+    /**
+     * @brief Case adverse dont l'état est inconnu (usage pour l'IHM uniquement)
+     */
+    INCONNU = '?',
+    /**
+     * @brief Case adjacente à un morceau de bateau (impossible de placer un bateau sur cette case)
+     */
+    PROTECT = '#', 
+    /**
+     * @brief Case contenant un morceau de bateau détruit
+     */
+    DETRUIT = 'X',
+    /**
+     * @brief Case contenant un morceau de bateau
+     */
+    OCCUPE = 'B'
 } EtatCase;
 
 struct Bateau;
 
-// Structure d'une case
+/**
+ * @brief Structure d'une case
+ */
 typedef struct Case
 {
-    Coordonnees pos;     // Position de la case sur le plateau
-    EtatCase etat;       // État de la case
-    bool estTouche;      // Indique si la case a été touché
-    struct Bateau *pBat; // Pointeur vers le bateau contenu dans la case
+    /**
+     * @brief Position de la case sur le plateau
+     */
+    Coordonnees pos;
+    /**
+     * @brief État de la case
+     */
+    EtatCase etat;
+    /**
+     * @brief Indique si la case a été touché
+     */
+    bool estTouche;
+    /**
+     * @brief Pointeur vers le bateau contenu dans la case
+     */
+    struct Bateau *pBat;
 } Case;
 
-// Pointeur vers un plateau
+/**
+ * @brief Pointeur vers un plateau
+ */
 typedef Case **PPlateau;
 
 ///////////////

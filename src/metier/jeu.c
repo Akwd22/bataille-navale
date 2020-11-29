@@ -1,3 +1,8 @@
+/**
+ * @file jeu.c
+ * @brief Toutes les fonctions relatives au démarrage du jeu
+ */
+
 #include <stdlib.h>
 #include <stdbool.h>
 #include <signal.h>

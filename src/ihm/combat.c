@@ -1,3 +1,8 @@
+/**
+ * @file combat.c
+ * @brief Gestion de l'affichage de la phase combat
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

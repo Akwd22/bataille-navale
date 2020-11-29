@@ -1,6 +1,8 @@
 ## Divers ##
 *.sav
 bin/*
+doc/html/*
+todo.txt
 
 ## Visual Studio Code ##
 .vscode/*

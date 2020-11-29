@@ -1,3 +1,8 @@
+/**
+ * @file main.c
+ * @brief Gestion des arguments de lancement, démarrage du jeu
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

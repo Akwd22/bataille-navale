@@ -1,3 +1,8 @@
+/**
+ * @file dao.c
+ * @brief Toutes les fonctions relatives à la sauvegarde et le chargement d'une partie
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 #include "dao.h"
@@ -21,45 +26,97 @@
 // Types //
 ///////////
 
-/* Case dans le fichier de sauvegarde */
+/**
+ * @brief Case dans le fichier de sauvegarde
+ * @see Case
+ */
 struct CaseSauvegarde
 {
-    Coordonnees pos; // Position de la case sur le plateau
-    EtatCase etat;   // État de la case
-    bool estTouche;  // Indique si la case a été touché
-    UBYTE pBat;      // Numéro du bateau lié à la case (0xFF si aucun)
+    /**
+     * @brief Position de la case sur le plateau
+     */
+    Coordonnees pos;
+    /**
+     * @brief État de la case
+     */
+    EtatCase etat;
+    /**
+     * @brief Indique si la case a été touché
+     */
+    bool estTouche;
+    /**
+     * @brief Numéro du bateau lié à la case (0xFF si aucun)
+     */
+    UBYTE pBat;
 };
 
-/* Bateau dans le fichier de sauvegarde */
+/**
+ * @brief Bateau dans le fichier de sauvegarde
+ * @see Bateau
+ */
 struct BateauSauvegarde
 {
-    UBYTE h;             // Hauteur du bateau
-    UBYTE l;             // Longueur du bateau
-    bool estPose;        // Indique si le bateau est posé
-    UBYTE nbCases;       // Nombre de cases occupées par le bateau
-    Coordonnees *pCases; // Tableau des positions (dans le plateau) des cases occupées par le bateau
+    /**
+     * @brief Hauteur du bateau
+     */
+    UBYTE h;
+    /**
+     * @brief Longueur du bateau
+     */
+    UBYTE l;
+    /**
+     * @brief Indique si le bateau est posé
+     */
+    bool estPose;
+    /**
+     * @brief Nombre de cases occupées par le bateau
+     */
+    UBYTE nbCases;
+    /**
+     * @brief Tableau des positions (dans le plateau) des cases occupées par le bateau
+     */
+    Coordonnees *pCases;
 };
 
-/* Données de l'IA dans le fichier de sauvegarde */
+/**
+ * @brief Données de l'IA dans le fichier de sauvegarde
+ */
 struct IASauvegarde
 {
-    Coordonnees pDerniereCaseDetruite; // Position (dans le plateau) de la dernière case détruite
-    UBYTE nbAdj;                       // Taille du tableau casesAdjacentes
-    Coordonnees *pCasesAdjacentes;     // Tableau des positions (dans le plateau) des cases adjcentes
+    /**
+     * @brief Position (dans le plateau) de la dernière case détruite
+     */
+    Coordonnees pDerniereCaseDetruite;
+    /**
+     * @brief Taille du tableau casesAdjacentes
+     */
+    UBYTE nbAdj;
+    /**
+     * @brief Tableau des positions (dans le plateau) des cases adjcentes
+     */
+    Coordonnees *pCasesAdjacentes;
 };
 
-/* Format du fichier de sauvegarde */
+/**
+ * @brief Format du fichier de sauvegarde
+ */
 struct FichierSauvegarde
 {
-    /* Options du jeu */
+    /**
+     * @brief Options du jeu
+     */
     JOptions options;
 
     /* Données du joueur 1 */
-    // Plateau
-    struct CaseSauvegarde *cases_j1; // Ensemble des cases
+    /**
+     * @brief Plateau du joueur 1, ensemble des cases
+     */
+    struct CaseSauvegarde *cases_j1;
 
-    // Flotte
-    struct BateauSauvegarde *bateaux_j1; // Ensemble des bateaux
+    /**
+     * @brief Flotte du joueur 1, ensemble des bateaux
+     */
+    struct BateauSauvegarde *bateaux_j1;
 
     /* Données du joueur 2 */
     // Plateau
@@ -68,7 +125,9 @@ struct FichierSauvegarde
     // Flotte
     struct BateauSauvegarde *bateaux_j2; // Ensemble des bateaux
 
-    /* Données de l'IA */
+    /**
+     * @brief Données de l'IA
+     */
     struct IASauvegarde ia;
 };
 

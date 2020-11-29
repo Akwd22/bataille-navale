@@ -10,7 +10,9 @@
 #define UINT unsigned int
 #include <stdbool.h>
 
-// Structure de coordonnées
+/**
+ * @brief Structure de coordonnées
+ */
 typedef struct Coordonnees
 {
     UBYTE x;

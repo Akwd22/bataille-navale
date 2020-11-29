@@ -1,3 +1,8 @@
+/**
+ * @file menu.c
+ * @brief Gestion de l'affichage du menu de démarrage
+ */
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>

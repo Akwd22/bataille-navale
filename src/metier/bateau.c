@@ -1,3 +1,8 @@
+/**
+ * @file bateau.c
+ * @brief Toutes les fonctions relatives aux bateaux
+ */
+
 #include <stdio.h>
 #include "plateau.h"
 #include "bateau.h"
