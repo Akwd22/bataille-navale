@@ -2,7 +2,6 @@
 *.sav
 bin/main
 doc/html/*
-todo.txt
 
 ## Visual Studio Code ##
 .vscode/*
