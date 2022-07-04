@@ -88,6 +88,17 @@ apt-get install doxygen
 ## Usage
 
 You can configure game options such as the size of the game board and the number of boats through launch parameters:
-* `--help` to get the list of parameters.
+* `--help` to get the list of parameters:
+  ```sh
+  Battleship
+
+          Usage:
+                  ./main [options]
+          Options:
+                  --help           Display the list of launch parameters.
+                  --lp <integer>   Length of the game board (between 5-25 included).
+                  --hp <integer>   Height of the game board (between 5-25 included).
+                  --tf <integer>   Fleet size (between 1-10 included).
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
