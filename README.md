@@ -1,38 +1,93 @@
-<!-- TABLE OF CONTENTS -->
-## Table des matières
+<div id="top"></div>
 
-* [À propos](#à-propos)
-  * [Construit avec](#construit-avec)
-* [Utilisation](#utilisation)
-* [Roadmap](#roadmap)
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center">Battleship</h3>
+  <p align="center">
+    <a href="#">View Demo (TODO)</a>
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#context">Context</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#usage">Usage</a></li>
+  </ol>
+</details>
 
 <!-- ABOUT THE PROJECT -->
-## À propos
+## About The Project
 
-Ce projet est un jeu de Bataille Navale basique en affichage console.
-Un mode de jeu contre l'IA et multijoueur sont proposés.
+<div align="center">
+  <img src="project-image.png">
+</div>
+<br />
 
-Ce projet débute mes premiers pas dans la programmation système et le langage C.
+This project basic principle is: a reproduction of the existing game **[Battleship](https://en.wikipedia.org/wiki/Battleship_(game))** playable with bots (no multiplayer).
 
-### Construit avec
-* Langage C
-* API Unix
-* API Win32
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTEXT -->
+## Context
+
+This project is a personal project and it was my first steps with the C language and Linux programming.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Built With
+
+Entire project was built with pure C and is only compatible with Linux.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- DOCUMENTATION -->
+## Documentation
+
+Doxygen docs can be generated in HTML by running `doxygen` command on file `doxy/Doxyfile` ([Doxygen](https://doxygen.nl/) must be installed on your system).
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow the steps:
+
+### Prerequisites
+
+To compile the project, you will need:
+* [Make](https://en.wikipedia.org/wiki/Make_(software))
+```sh
+apt-get install make
+```
+
+Optional dependency:
+```sh
+apt-get install doxygen
+```
+
+### Installation
+
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/Akwd22/bataille-navale.git
+   ```
+2. Compile the project:
+   ```sh
+   cd bin
+   make
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
-## Utilisation
+## Usage
 
-Deux modes de jeu sont disponibles :
-* Mode solo
-* Mode multijoueur
+You can configure game options such as the size of the game board and the number of boats through launch parameters:
+* `--help` to get the list of parameters.
 
-Vous pouvez configurez les options du jeu tels que les dimensions du plateau de jeu et le nombre de bateaux grâce a des paramètres de lancement :
-* `--help` pour avoir la liste des paramètres
-
-<!-- ROADMAP -->
-## Roadmap
-
-Pour l'instant, seul le mode solo existe et le jeu ne fonctionne que sous Unix.
-Les objectifs finaux sont :
-* Mode multijoueur
-* Portage sous Win32
+<p align="right">(<a href="#top">back to top</a>)</p>
