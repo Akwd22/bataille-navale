@@ -30,7 +30,13 @@
 </div>
 <br />
 
-This project basic principle is: a reproduction of the existing game **[Battleship](https://en.wikipedia.org/wiki/Battleship_(game))** playable with bots (no multiplayer).
+This project basic principle is: a reproduction of the existing game **[Battleship](https://en.wikipedia.org/wiki/Battleship_(game))** playable with a bot (no multiplayer).
+
+### Features
+
+- [x] Play with a bot,
+- [x] Save the game to play later,
+- [x] Game options are configurable.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -51,6 +57,14 @@ Entire project was built with pure C and is only compatible with Linux.
 ## Documentation
 
 Doxygen docs can be generated in HTML by running `doxygen` command on file `doxy/Doxyfile` ([Doxygen](https://doxygen.nl/) must be installed on your system).
+
+**Case symbols meaning:**
+
+`O` : Water case.  
+`#` : Water case that represents the boundary of a ship.  
+`B` : Case containing the piece of a ship (should be hit).  
+`X` : Piece of a ship destroyed.  
+`?` : Not discovered case.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -89,16 +103,16 @@ apt-get install doxygen
 
 You can configure game options such as the size of the game board and the number of boats through launch parameters:
 * `--help` to get the list of parameters:
-  ```sh
-  Battleship
+```sh
+Battleship
 
-          Usage:
-                  ./main [options]
-          Options:
-                  --help           Display the list of launch parameters.
-                  --lp <integer>   Length of the game board (between 5-25 included).
-                  --hp <integer>   Height of the game board (between 5-25 included).
-                  --tf <integer>   Fleet size (between 1-10 included).
-  ```
+        Usage:
+                ./main [options]
+        Options:
+                --help           Display the list of launch parameters.
+                --lp <integer>   Length of the game board (between 5-25 included).
+                --hp <integer>   Height of the game board (between 5-25 included).
+                --tf <integer>   Fleet size (between 1-10 included).
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
