@@ -52,7 +52,7 @@ void ia_allocAdjacents(void)
     else
     {
         // ... augmenter sa capacité de +4 cases
-        casesAdjacentes = (Case **)reallocarray(casesAdjacentes, nbAdj + 4, sizeof(Case *));
+        casesAdjacentes = (Case **)realloc(casesAdjacentes, (nbAdj + 4) * sizeof(Case *));
         nbAdj += 4;
     }
 
