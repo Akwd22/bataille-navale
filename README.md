@@ -34,8 +34,8 @@ This project basic principle is: a reproduction of the existing game **[Battlesh
 
 ### Features
 
-- [x] Play with a bot,
-- [x] Save the game to play later,
+- [x] Play with a bot.
+- [x] Save the game to play later.
 - [x] Game options are configurable.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -47,6 +47,7 @@ This project is a personal project and it was my first steps with the C language
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- BUILT WITH -->
 ## Built With
 
 Entire project was built with pure C and is only compatible with Linux.
