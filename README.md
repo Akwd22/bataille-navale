@@ -50,7 +50,7 @@ This project is a personal project and it was my first steps with the C language
 <!-- BUILT WITH -->
 ## Built With
 
-Entire project was built with pure C and is only compatible with Linux.
+Entire project was built with C and is only compatible with Linux.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
