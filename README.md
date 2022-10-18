@@ -4,9 +4,6 @@
 <br />
 <div align="center">
   <h3 align="center">Battleship</h3>
-  <p align="center">
-    <a href="#">View Demo (TODO)</a>
-  </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
